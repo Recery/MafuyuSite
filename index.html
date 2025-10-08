@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Mafuyu</title>
         <script src="scripts/defaultSite.js"></script>
@@ -9,26 +9,34 @@
             .mafu {
                 border: 3px solid black;
                 background-color: rgba(255, 250, 240, 0.6);
+
+                margin: 1vh;
+                padding: 1vh;
+                
+                display: flex;
+                flex-direction: row;
             }
 
             .kanamafu {
                 border: 3px solid black;
                 background-color: rgba(255, 250, 240, 0.6);
-                
-                align-items: center;
-                justify-content: center;
+
+                margin: 1vh;
             }
 
             .kanamafu h1 {
-                margin: 2%;
+                margin: 2vh;
+            }
+
+            .kanamafu img {
+                vertical-align: middle;
             }
         
             .bakenohana {
                 border: 3px solid black;
                 background-color: rgba(255, 250, 240, 0.6);
                 
-                margin-left: 5%;
-                margin-right: 5%;
+                margin: 1vh;
                 
                 display: flex;
                 justify-content: center;
@@ -51,19 +59,17 @@
             <img src="media/images/mafu.png">
             <img src="media/images/mafu2.png">
         </div>
-
-        <div style="height: 100px;"></div>
         
         <div class="kanamafu">
             <h1>KanaMafu>>>></h1>
             <img src="media/images/kanamafu.png">
         </div>
 
-        <div style="height: 10000px;"></div>
+        <div style="height: 300vh;"></div>
     
         <div class="bakenohana">
             <audio id="bakenohana">
-                <source src="media/audio/baneNoHanaSaturated.mp3" type="audio/mpeg">
+                <source src="media/audio/bakeNoHanaSaturated.mp3" type="audio/mpeg">
             </audio>
             <img id="ena-sticker" src="media/images/enaSticker.png">
             <div class="separator" style="height: 2.5%; width: auto; background-color: black;"></div>

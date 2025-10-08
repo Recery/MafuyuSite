@@ -3,6 +3,11 @@
     src: url("../media/fonts/ProjectSekaiStampFont-Regular.ttf");
 }
 
+html, body {
+    min-height: 100%;
+    height: auto;
+}
+
 body {
     font-family: Pjsk-Stamp;
     font-size: 200%;
@@ -19,6 +24,8 @@ body {
 }
 
 .scroll-pattern {
+    opacity: 0.7;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -26,7 +33,7 @@ body {
 
     background-image: url("../media/images/mafuyuChibi.png");
     background-repeat: repeat-y;
-    background-size: 7%;
+    background-size: 15vh;
     background-position: center;
 
     pointer-events: none;

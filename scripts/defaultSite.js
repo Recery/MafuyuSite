@@ -9,7 +9,11 @@ function setDefaultSite() {
     const scrollPattern = document.createElement("div");
     scrollPattern.className = "scroll-pattern";
     window.addEventListener("load", () => {
-        scrollPattern.style.height = document.body.scrollHeight + "px";
+        const bodyHeight = document.body.scrollHeight;
+        const vhInPx = window.innerHeight / 100;
+        const bodyHeightInVh = bodyHeight / vhInPx;
+
+        scrollPattern.style.height = bodyHeightInVh + "vh";
         document.body.appendChild(scrollPattern);
     });
 }
