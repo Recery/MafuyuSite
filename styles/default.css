@@ -1,0 +1,34 @@
+@font-face {
+    font-family: Pjsk-Stamp;
+    src: url("../media/fonts/ProjectSekaiStampFont-Regular.ttf");
+}
+
+body {
+    font-family: Pjsk-Stamp;
+    font-size: 200%;
+    text-align: center;
+
+    background-image: url("../media/images/emptysekai.png");
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-image: url("../media/images/mafuyuChibi.png");
+    background-repeat: repeat-y;
+    background-size: 7%;
+    background-position: center;
+
+    pointer-events: none;
+    z-index: -1;
+}
